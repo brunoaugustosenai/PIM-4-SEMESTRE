@@ -1,0 +1,27 @@
+{
+  "expo": {
+    "name": "NAXAPA",
+    "slug": "naxapa-mobile",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "automatic",
+    "android": {
+      "package": "br.com.naxapa.mobile",
+      "usesCleartextTraffic": true
+    },
+    "ios": {
+      "bundleIdentifier": "br.com.naxapa.mobile",
+      "supportsTablet": true,
+      "config": {
+        "usesNonExemptEncryption": false
+      }
+    },
+    "plugins": [
+      "expo-secure-store",
+      "expo-sqlite"
+    ],
+    "extra": {
+      "apiDefault": "http://192.168.0.100:5180"
+    }
+  }
+}

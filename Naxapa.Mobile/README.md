@@ -1,53 +1,34 @@
-# NAXAPA Mobile — v3.5.0
+# NAXAPA Mobile — Expo
 
-Aplicativo Flutter Android integrado à API REST do NAXAPA.
+Esta pasta substitui a pasta `Naxapa.Mobile` Flutter quando você quiser trabalhar com Expo/React Native.
+Ela não altera a Web/API nem o banco SQL Server.
 
-## O que foi corrigido
+## Recursos equivalentes ao Flutter
 
-- Corrigidos erros de tipagem Dart nos cálculos do carrinho (`fold<double>`).
-- Código Dart reorganizado e tipado para facilitar `flutter analyze`.
-- Contratos JSON alinhados aos DTOs reais da API NAXAPA.
-- Login com teste de conexão `/health`.
-- Catálogo mostra somente produtos disponíveis no cardápio.
-- Imagens cadastradas na Gestão são resolvidas pela URL da API e exibidas no mobile.
-- Cache SQLite preservado para consulta do último cardápio sincronizado.
-- Logout tenta revogar o token na API e sempre limpa a sessão local.
-- Tratamento de timeout e erro de conexão.
-- Testes de modelos, carrinho e contrato da API.
+- Login pela API NAXAPA (`/api/v1/auth/token`)
+- Teste de conexão (`/health`)
+- Sessão protegida com `expo-secure-store`
+- Cardápio/produtos cadastrados
+- Imagens dos produtos
+- Detalhes, adicionais e opções
+- Carrinho e envio do pedido
+- Pedidos e status
+- Cache local de produtos com SQLite
+- Configurações e logout
 
-## Preparação obrigatória no Windows
+## Primeira execução
 
-A partir da raiz do projeto NAXAPA, execute:
+1. Dê dois cliques em `PREPARAR_EXPO.bat`.
+2. No projeto principal, execute `Naxapa.Mobile\RUN_WEB_PARA_EXPO.bat` ou rode a Web/API em `0.0.0.0:5180`.
+3. Descubra o IPv4 do PC com `ipconfig`.
+4. Dê dois cliques em `RUN_EXPO.bat`.
+5. Abra o Expo Go no celular e leia o QR Code.
+6. Na tela de login, informe `http://IP_DO_PC:5180`.
 
-```powershell
-.\PREPARAR_MOBILE.bat
-```
+Exemplo: `http://192.168.0.15:5180`.
 
-Esse script usa o Flutter instalado na máquina para gerar o scaffold Android compatível com a sua versão do SDK, habilita a rede HTTP somente no build de debug para desenvolvimento local e executa `flutter pub get`.
+O celular e o PC precisam estar na mesma rede Wi-Fi. O Firewall do Windows deve permitir a porta 5180 em rede privada.
 
-Depois valide:
+## Observação sobre Expo Go
 
-```powershell
-.\VALIDAR_MOBILE.bat
-```
-
-E execute:
-
-```powershell
-.\RUN_MOBILE.bat
-```
-
-## API
-
-- Emulador Android: `http://10.0.2.2:5180`
-- Celular físico: `http://IP-DO-PC:5180`
-
-Para celular físico, a Gestão/API deve estar rodando com:
-
-```powershell
-dotnet run --project Naxapa.Web\Naxapa.Web.csproj --urls http://0.0.0.0:5180
-```
-
-## Segurança de rede
-
-O acesso HTTP sem TLS é habilitado pelo script somente para o manifest de debug Android. Para uma publicação real, configure HTTPS na API.
+Este projeto está preparado no SDK 57 por compatibilidade com Expo Go durante a transição do SDK 58. Quando o Expo Go do aparelho atualizar para SDK 58 de forma estável, o projeto pode ser atualizado com as ferramentas oficiais do Expo.

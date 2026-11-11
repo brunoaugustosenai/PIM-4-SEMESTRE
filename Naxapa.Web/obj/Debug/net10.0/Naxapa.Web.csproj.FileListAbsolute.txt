@@ -173,3 +173,4 @@ C:\Users\josericardo\Desktop\PIM 4 ° SEMESTRE\NAXAPA_v3.5.0\Naxapa.Web\obj\Debu
 C:\Users\josericardo\Desktop\PIM 4 ° SEMESTRE\NAXAPA_v3.5.0\Naxapa.Web\obj\Debug\net10.0\Naxapa.Web.pdb
 C:\Users\josericardo\Desktop\PIM 4 ° SEMESTRE\NAXAPA_v3.5.0\Naxapa.Web\obj\Debug\net10.0\Naxapa.Web.genruntimeconfig.cache
 C:\Users\josericardo\Desktop\PIM 4 ° SEMESTRE\NAXAPA_v3.5.0\Naxapa.Web\obj\Debug\net10.0\ref\Naxapa.Web.dll
+C:\Users\josericardo\Desktop\PIM 4 ° SEMESTRE\NAXAPA_v3.5.0\Naxapa.Web\obj\Debug\net10.0\Naxapa.Web.sourcelink.json

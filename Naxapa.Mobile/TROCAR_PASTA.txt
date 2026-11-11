@@ -1,0 +1,10 @@
+NOME DA PASTA: Naxapa.Mobile
+
+Para substituir o Flutter:
+1. Feche VS Code/Flutter.
+2. Renomeie a pasta Flutter atual para Naxapa.Mobile.Flutter.Backup.
+3. Copie esta pasta Naxapa.Mobile para o mesmo local.
+4. Execute PREPARAR_EXPO.bat.
+5. Execute RUN_EXPO.bat.
+
+A Web/API continua em ../Naxapa.Web e nao foi alterada.

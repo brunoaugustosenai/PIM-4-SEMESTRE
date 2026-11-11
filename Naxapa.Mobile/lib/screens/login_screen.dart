@@ -80,7 +80,8 @@ class _LoginScreenState extends State<LoginScreen> {
       await widget.store.saveBaseUrl(base.text);
       await widget.api.ping();
       if (!mounted) return;
-      setState(() => connectionMessage = 'API e NaxapaDB responderam corretamente.');
+      setState(
+          () => connectionMessage = 'API e NaxapaDB responderam corretamente.');
     } catch (e) {
       if (!mounted) return;
       setState(() => error = e.toString());
@@ -150,7 +151,8 @@ class _LoginScreenState extends State<LoginScreen> {
                           decoration: const InputDecoration(
                             labelText: 'Endereço da API',
                             hintText: 'http://10.0.2.2:5180',
-                            helperText: 'Emulador Android: 10.0.2.2. Celular: IP do PC.',
+                            helperText:
+                                'Emulador Android: 10.0.2.2. Celular: IP do PC.',
                             prefixIcon: Icon(Icons.dns_outlined),
                           ),
                         ),
@@ -160,7 +162,8 @@ class _LoginScreenState extends State<LoginScreen> {
                           icon: testing
                               ? const SizedBox.square(
                                   dimension: 18,
-                                  child: CircularProgressIndicator(strokeWidth: 2),
+                                  child:
+                                      CircularProgressIndicator(strokeWidth: 2),
                                 )
                               : const Icon(Icons.wifi_tethering),
                           label: const Text('Testar conexão com a API'),
@@ -236,7 +239,8 @@ class _LoginScreenState extends State<LoginScreen> {
                           icon: loading
                               ? const SizedBox.square(
                                   dimension: 18,
-                                  child: CircularProgressIndicator(strokeWidth: 2),
+                                  child:
+                                      CircularProgressIndicator(strokeWidth: 2),
                                 )
                               : const Icon(Icons.login),
                           label: const Text('Entrar'),
