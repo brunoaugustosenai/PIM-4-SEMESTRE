@@ -1,0 +1,340 @@
+is_global = true
+build_property.TargetFramework = net10.0
+build_property.TargetFramework = net10.0
+build_property.TargetPlatformMinVersion = 
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = false
+build_property.InvariantGlobalization = false
+build_property.PlatformNeutralAssembly = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.TargetFrameworkIdentifier = .NETCoreApp
+build_property.TargetFrameworkVersion = v10.0
+build_property.EntryPointFilePath = 
+build_property.RootNamespace = Naxapa.Web
+build_property.RootNamespace = Naxapa.Web
+build_property.ProjectDir = C:\Users\josericardo\Desktop\PIM 4 ° SEMESTRE\NAXAPA_v3.5.0\Naxapa.Web\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.RazorLangVersion = 10.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\josericardo\Desktop\PIM 4 ° SEMESTRE\NAXAPA_v3.5.0\Naxapa.Web
+build_property._RazorSourceGeneratorDebug = 
+build_property.EffectiveAnalysisLevelStyle = 10.0
+build_property.EnableCodeStyleSeverity = 
+
+[C:/Users/josericardo/Desktop/PIM 4 ° SEMESTRE/NAXAPA_v3.5.0/Naxapa.Web/Views/Caixa/Abrir.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FpeGFcQWJyaXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/josericardo/Desktop/PIM 4 ° SEMESTRE/NAXAPA_v3.5.0/Naxapa.Web/Views/Caixa/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FpeGFcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/josericardo/Desktop/PIM 4 ° SEMESTRE/NAXAPA_v3.5.0/Naxapa.Web/Views/Caixa/Fechar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FpeGFcRmVjaGFyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/josericardo/Desktop/PIM 4 ° SEMESTRE/NAXAPA_v3.5.0/Naxapa.Web/Views/Caixa/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FpeGFcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/josericardo/Desktop/PIM 4 ° SEMESTRE/NAXAPA_v3.5.0/Naxapa.Web/Views/Caixa/Movimentar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FpeGFcTW92aW1lbnRhci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/josericardo/Desktop/PIM 4 ° SEMESTRE/NAXAPA_v3.5.0/Naxapa.Web/Views/CardapioDigital/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FyZGFwaW9EaWdpdGFsXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/josericardo/Desktop/PIM 4 ° SEMESTRE/NAXAPA_v3.5.0/Naxapa.Web/Views/Cardapio/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FyZGFwaW9cQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/josericardo/Desktop/PIM 4 ° SEMESTRE/NAXAPA_v3.5.0/Naxapa.Web/Views/Cardapio/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FyZGFwaW9cRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/josericardo/Desktop/PIM 4 ° SEMESTRE/NAXAPA_v3.5.0/Naxapa.Web/Views/Cardapio/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FyZGFwaW9cSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/josericardo/Desktop/PIM 4 ° SEMESTRE/NAXAPA_v3.5.0/Naxapa.Web/Views/Cardapio/Products.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FyZGFwaW9cUHJvZHVjdHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/josericardo/Desktop/PIM 4 ° SEMESTRE/NAXAPA_v3.5.0/Naxapa.Web/Views/Cardapio/_Form.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FyZGFwaW9cX0Zvcm0uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/josericardo/Desktop/PIM 4 ° SEMESTRE/NAXAPA_v3.5.0/Naxapa.Web/Views/Categorias/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcmlhc1xDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/josericardo/Desktop/PIM 4 ° SEMESTRE/NAXAPA_v3.5.0/Naxapa.Web/Views/Categorias/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcmlhc1xFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/josericardo/Desktop/PIM 4 ° SEMESTRE/NAXAPA_v3.5.0/Naxapa.Web/Views/Categorias/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcmlhc1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/josericardo/Desktop/PIM 4 ° SEMESTRE/NAXAPA_v3.5.0/Naxapa.Web/Views/Categorias/_Form.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcmlhc1xfRm9ybS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/josericardo/Desktop/PIM 4 ° SEMESTRE/NAXAPA_v3.5.0/Naxapa.Web/Views/Clientes/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xpZW50ZXNcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/josericardo/Desktop/PIM 4 ° SEMESTRE/NAXAPA_v3.5.0/Naxapa.Web/Views/Clientes/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xpZW50ZXNcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/josericardo/Desktop/PIM 4 ° SEMESTRE/NAXAPA_v3.5.0/Naxapa.Web/Views/Clientes/History.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xpZW50ZXNcSGlzdG9yeS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/josericardo/Desktop/PIM 4 ° SEMESTRE/NAXAPA_v3.5.0/Naxapa.Web/Views/Clientes/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xpZW50ZXNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/josericardo/Desktop/PIM 4 ° SEMESTRE/NAXAPA_v3.5.0/Naxapa.Web/Views/Clientes/_Form.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xpZW50ZXNcX0Zvcm0uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/josericardo/Desktop/PIM 4 ° SEMESTRE/NAXAPA_v3.5.0/Naxapa.Web/Views/Configuracoes/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29uZmlndXJhY29lc1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/josericardo/Desktop/PIM 4 ° SEMESTRE/NAXAPA_v3.5.0/Naxapa.Web/Views/Conta/AcessoNegado.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29udGFcQWNlc3NvTmVnYWRvLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/josericardo/Desktop/PIM 4 ° SEMESTRE/NAXAPA_v3.5.0/Naxapa.Web/Views/Conta/AlterarSenha.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29udGFcQWx0ZXJhclNlbmhhLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/josericardo/Desktop/PIM 4 ° SEMESTRE/NAXAPA_v3.5.0/Naxapa.Web/Views/Conta/EditarPerfil.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29udGFcRWRpdGFyUGVyZmlsLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/josericardo/Desktop/PIM 4 ° SEMESTRE/NAXAPA_v3.5.0/Naxapa.Web/Views/Conta/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29udGFcTG9naW4uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/josericardo/Desktop/PIM 4 ° SEMESTRE/NAXAPA_v3.5.0/Naxapa.Web/Views/Conta/Perfil.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29udGFcUGVyZmlsLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/josericardo/Desktop/PIM 4 ° SEMESTRE/NAXAPA_v3.5.0/Naxapa.Web/Views/Conta/Preferencias.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29udGFcUHJlZmVyZW5jaWFzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/josericardo/Desktop/PIM 4 ° SEMESTRE/NAXAPA_v3.5.0/Naxapa.Web/Views/Diagnostico/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGlhZ25vc3RpY29cSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/josericardo/Desktop/PIM 4 ° SEMESTRE/NAXAPA_v3.5.0/Naxapa.Web/Views/Estabelecimentos/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXN0YWJlbGVjaW1lbnRvc1xDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/josericardo/Desktop/PIM 4 ° SEMESTRE/NAXAPA_v3.5.0/Naxapa.Web/Views/Estabelecimentos/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXN0YWJlbGVjaW1lbnRvc1xFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/josericardo/Desktop/PIM 4 ° SEMESTRE/NAXAPA_v3.5.0/Naxapa.Web/Views/Estabelecimentos/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXN0YWJlbGVjaW1lbnRvc1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/josericardo/Desktop/PIM 4 ° SEMESTRE/NAXAPA_v3.5.0/Naxapa.Web/Views/Estabelecimentos/_Form.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXN0YWJlbGVjaW1lbnRvc1xfRm9ybS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/josericardo/Desktop/PIM 4 ° SEMESTRE/NAXAPA_v3.5.0/Naxapa.Web/Views/Home/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxFcnJvci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/josericardo/Desktop/PIM 4 ° SEMESTRE/NAXAPA_v3.5.0/Naxapa.Web/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/josericardo/Desktop/PIM 4 ° SEMESTRE/NAXAPA_v3.5.0/Naxapa.Web/Views/Impressoras/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW1wcmVzc29yYXNcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/josericardo/Desktop/PIM 4 ° SEMESTRE/NAXAPA_v3.5.0/Naxapa.Web/Views/Impressoras/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW1wcmVzc29yYXNcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/josericardo/Desktop/PIM 4 ° SEMESTRE/NAXAPA_v3.5.0/Naxapa.Web/Views/Impressoras/History.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW1wcmVzc29yYXNcSGlzdG9yeS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/josericardo/Desktop/PIM 4 ° SEMESTRE/NAXAPA_v3.5.0/Naxapa.Web/Views/Impressoras/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW1wcmVzc29yYXNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/josericardo/Desktop/PIM 4 ° SEMESTRE/NAXAPA_v3.5.0/Naxapa.Web/Views/Impressoras/_Form.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW1wcmVzc29yYXNcX0Zvcm0uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/josericardo/Desktop/PIM 4 ° SEMESTRE/NAXAPA_v3.5.0/Naxapa.Web/Views/Insumos/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW5zdW1vc1xDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/josericardo/Desktop/PIM 4 ° SEMESTRE/NAXAPA_v3.5.0/Naxapa.Web/Views/Insumos/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW5zdW1vc1xFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/josericardo/Desktop/PIM 4 ° SEMESTRE/NAXAPA_v3.5.0/Naxapa.Web/Views/Insumos/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW5zdW1vc1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/josericardo/Desktop/PIM 4 ° SEMESTRE/NAXAPA_v3.5.0/Naxapa.Web/Views/Insumos/_Form.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW5zdW1vc1xfRm9ybS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/josericardo/Desktop/PIM 4 ° SEMESTRE/NAXAPA_v3.5.0/Naxapa.Web/Views/Opcoes/CreateGroup.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3Bjb2VzXENyZWF0ZUdyb3VwLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/josericardo/Desktop/PIM 4 ° SEMESTRE/NAXAPA_v3.5.0/Naxapa.Web/Views/Opcoes/CreateOption.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3Bjb2VzXENyZWF0ZU9wdGlvbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/josericardo/Desktop/PIM 4 ° SEMESTRE/NAXAPA_v3.5.0/Naxapa.Web/Views/Opcoes/EditGroup.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3Bjb2VzXEVkaXRHcm91cC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/josericardo/Desktop/PIM 4 ° SEMESTRE/NAXAPA_v3.5.0/Naxapa.Web/Views/Opcoes/EditOption.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3Bjb2VzXEVkaXRPcHRpb24uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/josericardo/Desktop/PIM 4 ° SEMESTRE/NAXAPA_v3.5.0/Naxapa.Web/Views/Opcoes/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3Bjb2VzXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/josericardo/Desktop/PIM 4 ° SEMESTRE/NAXAPA_v3.5.0/Naxapa.Web/Views/Opcoes/Products.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3Bjb2VzXFByb2R1Y3RzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/josericardo/Desktop/PIM 4 ° SEMESTRE/NAXAPA_v3.5.0/Naxapa.Web/Views/Opcoes/_GroupForm.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3Bjb2VzXF9Hcm91cEZvcm0uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/josericardo/Desktop/PIM 4 ° SEMESTRE/NAXAPA_v3.5.0/Naxapa.Web/Views/Opcoes/_OptionForm.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3Bjb2VzXF9PcHRpb25Gb3JtLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/josericardo/Desktop/PIM 4 ° SEMESTRE/NAXAPA_v3.5.0/Naxapa.Web/Views/Pedidos/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGVkaWRvc1xEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/josericardo/Desktop/PIM 4 ° SEMESTRE/NAXAPA_v3.5.0/Naxapa.Web/Views/Pedidos/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGVkaWRvc1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/josericardo/Desktop/PIM 4 ° SEMESTRE/NAXAPA_v3.5.0/Naxapa.Web/Views/Produtos/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHV0b3NcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/josericardo/Desktop/PIM 4 ° SEMESTRE/NAXAPA_v3.5.0/Naxapa.Web/Views/Produtos/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHV0b3NcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/josericardo/Desktop/PIM 4 ° SEMESTRE/NAXAPA_v3.5.0/Naxapa.Web/Views/Produtos/Import.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHV0b3NcSW1wb3J0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/josericardo/Desktop/PIM 4 ° SEMESTRE/NAXAPA_v3.5.0/Naxapa.Web/Views/Produtos/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHV0b3NcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/josericardo/Desktop/PIM 4 ° SEMESTRE/NAXAPA_v3.5.0/Naxapa.Web/Views/Produtos/_Form.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHV0b3NcX0Zvcm0uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/josericardo/Desktop/PIM 4 ° SEMESTRE/NAXAPA_v3.5.0/Naxapa.Web/Views/Receitas/AddItem.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVjZWl0YXNcQWRkSXRlbS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/josericardo/Desktop/PIM 4 ° SEMESTRE/NAXAPA_v3.5.0/Naxapa.Web/Views/Receitas/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVjZWl0YXNcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/josericardo/Desktop/PIM 4 ° SEMESTRE/NAXAPA_v3.5.0/Naxapa.Web/Views/Receitas/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVjZWl0YXNcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/josericardo/Desktop/PIM 4 ° SEMESTRE/NAXAPA_v3.5.0/Naxapa.Web/Views/Receitas/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVjZWl0YXNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/josericardo/Desktop/PIM 4 ° SEMESTRE/NAXAPA_v3.5.0/Naxapa.Web/Views/Receitas/Items.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVjZWl0YXNcSXRlbXMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/josericardo/Desktop/PIM 4 ° SEMESTRE/NAXAPA_v3.5.0/Naxapa.Web/Views/Receitas/_Form.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVjZWl0YXNcX0Zvcm0uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/josericardo/Desktop/PIM 4 ° SEMESTRE/NAXAPA_v3.5.0/Naxapa.Web/Views/Setores/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2V0b3Jlc1xDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/josericardo/Desktop/PIM 4 ° SEMESTRE/NAXAPA_v3.5.0/Naxapa.Web/Views/Setores/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2V0b3Jlc1xFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/josericardo/Desktop/PIM 4 ° SEMESTRE/NAXAPA_v3.5.0/Naxapa.Web/Views/Setores/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2V0b3Jlc1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/josericardo/Desktop/PIM 4 ° SEMESTRE/NAXAPA_v3.5.0/Naxapa.Web/Views/Setores/_Form.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2V0b3Jlc1xfRm9ybS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/josericardo/Desktop/PIM 4 ° SEMESTRE/NAXAPA_v3.5.0/Naxapa.Web/Views/Setup/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2V0dXBcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/josericardo/Desktop/PIM 4 ° SEMESTRE/NAXAPA_v3.5.0/Naxapa.Web/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/josericardo/Desktop/PIM 4 ° SEMESTRE/NAXAPA_v3.5.0/Naxapa.Web/Views/Usuarios/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb3NcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/josericardo/Desktop/PIM 4 ° SEMESTRE/NAXAPA_v3.5.0/Naxapa.Web/Views/Usuarios/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb3NcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/josericardo/Desktop/PIM 4 ° SEMESTRE/NAXAPA_v3.5.0/Naxapa.Web/Views/Usuarios/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb3NcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/josericardo/Desktop/PIM 4 ° SEMESTRE/NAXAPA_v3.5.0/Naxapa.Web/Views/Usuarios/ResetPassword.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb3NcUmVzZXRQYXNzd29yZC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/josericardo/Desktop/PIM 4 ° SEMESTRE/NAXAPA_v3.5.0/Naxapa.Web/Views/Usuarios/_Form.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb3NcX0Zvcm0uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/josericardo/Desktop/PIM 4 ° SEMESTRE/NAXAPA_v3.5.0/Naxapa.Web/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/josericardo/Desktop/PIM 4 ° SEMESTRE/NAXAPA_v3.5.0/Naxapa.Web/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 

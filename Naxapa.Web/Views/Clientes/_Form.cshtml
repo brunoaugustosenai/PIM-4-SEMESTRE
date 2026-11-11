@@ -1,0 +1,18 @@
+@model ClientFormViewModel
+<div asp-validation-summary="ModelOnly" class="validation-summary"></div>
+<div class="form-grid">
+    <div class="field"><label asp-for="Nome"></label><input asp-for="Nome" /><span asp-validation-for="Nome"></span></div>
+    <div class="field"><label asp-for="CodigoInterno"></label><input asp-for="CodigoInterno" /><span asp-validation-for="CodigoInterno"></span></div>
+    <div class="field"><label asp-for="Documento"></label><input asp-for="Documento" placeholder="CPF ou CNPJ" /><span asp-validation-for="Documento"></span></div>
+    <div class="field"><label asp-for="Telefone"></label><input asp-for="Telefone" /><span asp-validation-for="Telefone"></span></div>
+    <div class="field field-full"><label asp-for="Email"></label><input asp-for="Email" type="email" /><span asp-validation-for="Email"></span></div>
+    <div class="field"><label asp-for="Logradouro"></label><input asp-for="Logradouro" /><span asp-validation-for="Logradouro"></span></div>
+    <div class="field"><label asp-for="Numero"></label><input asp-for="Numero" /><span asp-validation-for="Numero"></span></div>
+    <div class="field"><label asp-for="Complemento"></label><input asp-for="Complemento" /><span asp-validation-for="Complemento"></span></div>
+    <div class="field"><label asp-for="Bairro"></label><input asp-for="Bairro" /><span asp-validation-for="Bairro"></span></div>
+    <div class="field"><label asp-for="Cidade"></label><input asp-for="Cidade" /><span asp-validation-for="Cidade"></span></div>
+    <div class="field"><label asp-for="UF"></label><input asp-for="UF" maxlength="2" /><span asp-validation-for="UF"></span></div>
+    <div class="field"><label asp-for="CEP"></label><input asp-for="CEP" /><span asp-validation-for="CEP"></span></div>
+    <div class="field field-full"><label asp-for="Observacao"></label><textarea asp-for="Observacao" rows="3"></textarea><span asp-validation-for="Observacao"></span></div>
+</div>
+<div class="check-grid"><label class="check-field"><input asp-for="Ativo" /><span>Cliente ativo</span></label></div>

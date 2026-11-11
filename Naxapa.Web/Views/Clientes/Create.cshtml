@@ -1,0 +1,4 @@
+@model ClientFormViewModel
+@{ ViewData["Title"] = "Novo cliente"; }
+<section class="page-heading"><div><p class="eyebrow">Clientes</p><h1>Novo cliente</h1><p class="page-subtitle">Os dados serão salvos no NaxapaDB.</p></div></section>
+<section class="panel form-panel"><form asp-action="Create" method="post"><partial name="_Form" model="Model" /><div class="form-actions"><a class="button button-secondary" asp-action="Index">Cancelar</a><button class="button button-primary" type="submit"><span class="material-symbols-rounded">save</span>Salvar cliente</button></div></form></section>

@@ -1,0 +1,2 @@
+@model OptionFormViewModel
+<div asp-validation-summary="ModelOnly" class="validation-summary"></div><input asp-for="GrupoOpcaoId" type="hidden"/><div class="form-grid"><div class="field"><label asp-for="Nome"></label><input asp-for="Nome"/></div><div class="field"><label asp-for="ValorAdicional"></label><input asp-for="ValorAdicional" type="number" step="0.01"/></div><div class="field"><label asp-for="OrdemExibicao"></label><input asp-for="OrdemExibicao"/></div></div><label class="check-field"><input asp-for="Ativo"/> Ativa</label>

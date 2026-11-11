@@ -1,0 +1,13 @@
+@model SetupAdminViewModel
+@{ Layout=null; }<!doctype html><html lang="pt-BR"><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width"/><link rel="stylesheet" href="~/css/site.css"/><title>Configuração inicial - NAXAPA</title></head><body><div class="auth-shell"><div class="auth-card">
+<div class="auth-brand"><div class="brand-mark">N</div><div><strong>NAXAPA</strong><p>Primeira configuração</p></div></div><h1>Criar administrador</h1><p>Esta tela só funciona em <strong>localhost</strong> e desaparece após a criação do primeiro usuário.</p>
+<form method="post"><div asp-validation-summary="ModelOnly" class="validation-summary"></div>
+<div class="field"><label asp-for="Estabelecimento"></label><input asp-for="Estabelecimento"/><span asp-validation-for="Estabelecimento"></span></div>
+<div class="field"><label asp-for="CodigoEstabelecimento"></label><input asp-for="CodigoEstabelecimento"/></div>
+<div class="field"><label asp-for="Documento"></label><input asp-for="Documento" inputmode="numeric" autocomplete="off" placeholder="CPF ou CNPJ"/><span asp-validation-for="Documento"></span></div>
+<div class="field"><label asp-for="Nome"></label><input asp-for="Nome" autocomplete="name"/></div>
+<div class="field"><label asp-for="UserName"></label><input asp-for="UserName" autocomplete="username"/></div>
+<div class="field"><label asp-for="Email"></label><input asp-for="Email" autocomplete="email"/></div>
+<div class="field"><label asp-for="Password"></label><input asp-for="Password" autocomplete="new-password"/></div>
+<div class="field"><label asp-for="ConfirmPassword"></label><input asp-for="ConfirmPassword" autocomplete="new-password"/></div>
+<div class="form-actions"><button type="submit" class="button button-primary">Concluir configuração</button></div></form></div></div></body></html>

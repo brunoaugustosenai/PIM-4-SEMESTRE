@@ -1,0 +1,5 @@
+@model ProductFormViewModel
+@{ViewData["Title"]="Editar produto";}<div class="page-heading"><div><h1>Editar produto</h1></div></div><div class="panel form-panel"><form method="post" enctype="multipart/form-data"><partial name="_Form" model="Model"/><div class="form-actions"><a class="button button-secondary" asp-action="Index">Cancelar</a><button class="button button-primary">Salvar alterações</button></div></form></div>
+@section Scripts {
+    <script src="~/js/product-form.js" asp-append-version="true"></script>
+}

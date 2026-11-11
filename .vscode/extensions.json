@@ -1,0 +1,10 @@
+{
+  "recommendations": [
+    "ms-dotnettools.csdevkit",
+    "ms-dotnettools.csharp",
+    "ms-mssql.mssql",
+    "ms-vscode.powershell",
+    "dart-code.dart-code",
+    "dart-code.flutter"
+  ]
+}

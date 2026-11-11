@@ -1,0 +1,104 @@
+@using Microsoft.AspNetCore.Authorization
+@inject Naxapa.Web.Services.DatabaseRuntimeState DatabaseState
+@inject Naxapa.Web.Security.CurrentUserService CurrentUser
+@inject IAuthorizationService AuthorizationService
+@{
+    var signed = User.Identity?.IsAuthenticated == true;
+    var canProducts = signed && (await AuthorizationService.AuthorizeAsync(User, "Permission:PRODUTO.VISUALIZAR")).Succeeded;
+    var canClients = signed && (await AuthorizationService.AuthorizeAsync(User, "Permission:CLIENTE.VISUALIZAR")).Succeeded;
+    var canCategories = signed && (await AuthorizationService.AuthorizeAsync(User, "Permission:CATEGORIA.VISUALIZAR")).Succeeded;
+    var canMenus = signed && (await AuthorizationService.AuthorizeAsync(User, "Permission:CARDAPIO.VISUALIZAR")).Succeeded;
+    var canOrders = signed && (await AuthorizationService.AuthorizeAsync(User, "Permission:PEDIDO.VISUALIZAR")).Succeeded;
+    var canCash = signed && (await AuthorizationService.AuthorizeAsync(User, "Permission:CAIXA.VISUALIZAR")).Succeeded;
+    var canUsers = signed && (await AuthorizationService.AuthorizeAsync(User, "Permission:USUARIO.VISUALIZAR")).Succeeded;
+    var canEstablishments = signed && (await AuthorizationService.AuthorizeAsync(User, "Permission:ESTABELECIMENTO.VISUALIZAR")).Succeeded;
+    var canPrinters = signed && (await AuthorizationService.AuthorizeAsync(User, "Permission:IMPRESSORA.VISUALIZAR")).Succeeded;
+    var canIngredients = signed && (await AuthorizationService.AuthorizeAsync(User, "Permission:INSUMO.VISUALIZAR")).Succeeded;
+    var canRecipes = signed && (await AuthorizationService.AuthorizeAsync(User, "Permission:RECEITA.VISUALIZAR")).Succeeded;
+    string establishment = "";
+    if (signed)
+    {
+        var establishments = await CurrentUser.GetAuthorizedEstablishmentsAsync();
+        establishment = establishments.FirstOrDefault(x => x.Id == CurrentUser.EstabelecimentoId).Nome ?? "Estabelecimento";
+    }
+}
+<!DOCTYPE html>
+<html lang="pt-BR" data-theme="light">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#15171c" />
+    <title>@ViewData["Title"] - NAXAPA</title>
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+</head>
+<body>
+<div class="app-shell">
+    <aside class="sidebar" id="sidebar" aria-label="Menu principal">
+        <div class="brand"><div class="brand-mark">N</div><div><strong>NAXAPA</strong><span>Gestão</span></div></div>
+        <nav class="nav-list">
+            <div class="nav-label">GERAL</div>
+            <a class="nav-item @Active("Home")" asp-controller="Home" asp-action="Index"><span class="nav-icon">▦</span><span>Dashboard</span></a>
+            @if (canEstablishments) { <a class="nav-item @Active("Estabelecimentos")" asp-controller="Estabelecimentos" asp-action="Index"><span class="nav-icon">⌂</span><span>Estabelecimentos</span></a> }
+
+            <div class="nav-label">CADASTROS</div>
+            @if (canProducts) { <a class="nav-item @Active("Produtos")" asp-controller="Produtos" asp-action="Index"><span class="nav-icon">□</span><span>Produtos</span></a> }
+            @if (canClients) { <a class="nav-item @Active("Clientes")" asp-controller="Clientes" asp-action="Index"><span class="nav-icon">♙</span><span>Clientes</span></a> }
+            @if (canCategories) { <a class="nav-item @Active("Categorias")" asp-controller="Categorias" asp-action="Index"><span class="nav-icon">☷</span><span>Categorias</span></a> }
+            @if (canProducts) { <a class="nav-item @Active("Opcoes")" asp-controller="Opcoes" asp-action="Index"><span class="nav-icon">＋</span><span>Opções e adicionais</span></a> }
+            @if (canIngredients) { <a class="nav-item @Active("Insumos")" asp-controller="Insumos" asp-action="Index"><span class="nav-icon">◌</span><span>Insumos</span></a> }
+            @if (canRecipes) { <a class="nav-item @Active("Receitas")" asp-controller="Receitas" asp-action="Index"><span class="nav-icon">≋</span><span>Receitas</span></a> }
+            @if (canMenus) { <a class="nav-item @Active("Cardapio")" asp-controller="Cardapio" asp-action="Index"><span class="nav-icon">≡</span><span>Cardápios</span></a> }
+            @if (canMenus) { <a class="nav-item @Active("CardapioDigital")" asp-controller="CardapioDigital" asp-action="Index" asp-route-estabelecimentoId="@CurrentUser.EstabelecimentoId" target="_blank"><span class="nav-icon">▤</span><span>Cardápio digital</span></a> }
+
+            <div class="nav-label">OPERAÇÃO</div>
+            @if (canOrders) { <a class="nav-item @Active("Pedidos")" asp-controller="Pedidos" asp-action="Index"><span class="nav-icon">▤</span><span>Pedidos</span></a> }
+            @if (canCash) { <a class="nav-item @Active("Caixa")" asp-controller="Caixa" asp-action="Index"><span class="nav-icon">$</span><span>Caixa</span></a> }
+            @if (canPrinters) { <a class="nav-item @Active("Impressoras")" asp-controller="Impressoras" asp-action="Index"><span class="nav-icon">▣</span><span>Impressoras</span></a> }
+            @if (canProducts) { <a class="nav-item @Active("Setores")" asp-controller="Setores" asp-action="Index"><span class="nav-icon">⌘</span><span>Setores</span></a> }
+
+            <div class="nav-label">SISTEMA</div>
+            @if (canUsers) { <a class="nav-item @Active("Usuarios")" asp-controller="Usuarios" asp-action="Index"><span class="nav-icon">⚿</span><span>Usuários</span></a> }
+            <a class="nav-item @Active("Configuracoes")" asp-controller="Configuracoes" asp-action="Index"><span class="nav-icon">⚙</span><span>Configurações</span></a>
+        </nav>
+        <a class="sidebar-footer" asp-controller="Conta" asp-action="Perfil">
+            <div class="profile-avatar">@Initials(CurrentUser.Nome)</div>
+            <div class="profile-copy"><strong>@CurrentUser.Nome</strong><span>@CurrentUser.Perfil</span></div>
+        </a>
+    </aside>
+
+    <div class="content-shell">
+        <header class="topbar">
+            <button class="icon-button menu-button" id="menuButton" aria-label="Abrir menu">☰</button>
+            <div class="topbar-title"><span class="eyebrow">@establishment</span><strong>@(ViewData["Title"] ?? "Dashboard")</strong></div>
+            <div class="topbar-actions">
+                <div class="connection-pill"><span class="status-dot @(DatabaseState.IsReady ? "" : "offline")"></span><span>@(DatabaseState.IsReady ? "SQL Server" : "Banco offline")</span></div>
+                <button class="icon-button" id="themeButton" aria-label="Alternar tema">◐</button>
+                <details class="user-menu">
+                    <summary class="profile-button"><span class="profile-avatar small">@Initials(CurrentUser.Nome)</span><span class="hide-mobile">@CurrentUser.Nome</span></summary>
+                    <div class="user-menu-panel">
+                        <strong>@CurrentUser.Nome</strong><span>@CurrentUser.Perfil · @establishment</span>
+                        <a asp-controller="Conta" asp-action="Perfil">Meu perfil</a>
+                        <a asp-controller="Conta" asp-action="EditarPerfil">Editar informações</a>
+                        <a asp-controller="Conta" asp-action="AlterarSenha">Alterar senha</a>
+                        <a asp-controller="Conta" asp-action="Preferencias">Preferências</a>
+                        <form asp-controller="Conta" asp-action="Logout" method="post"><button type="submit">Sair</button></form>
+                    </div>
+                </details>
+            </div>
+        </header>
+        <main class="page-content">
+            @if (TempData["Success"] is string ok) { <div class="alert alert-success">@ok</div> }
+            @if (TempData["Error"] is string err) { <div class="alert alert-danger">@err</div> }
+            @RenderBody()
+        </main>
+    </div>
+</div>
+<div class="sidebar-backdrop" id="sidebarBackdrop"></div>
+<script src="~/js/site.js" asp-append-version="true"></script>
+@await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>
+@functions {
+    string Active(string controller) => string.Equals(ViewContext.RouteData.Values["controller"]?.ToString(), controller, StringComparison.OrdinalIgnoreCase) ? "active" : "";
+    string Initials(string name) { var parts=(name??"N").Split(' ', StringSplitOptions.RemoveEmptyEntries); return string.Concat(parts.Take(2).Select(x=>char.ToUpperInvariant(x[0]))); }
+}

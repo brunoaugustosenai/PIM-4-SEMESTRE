@@ -1,0 +1,6 @@
+@model IReadOnlyList<Naxapa.Web.Models.PrinterJobRow>
+@{ ViewData["Title"] = "Histórico de impressão"; }
+<section class="page-heading"><div><h1>Histórico de impressão</h1><p class="page-subtitle">Fila persistente e confirmações do agente local.</p></div><a class="button button-secondary" asp-action="Index">Voltar</a></section>
+<section class="panel table-panel"><div class="table-responsive"><table><thead><tr><th>ID</th><th>Pedido</th><th>Impressora</th><th>Documento</th><th>Status</th><th>Tentativas</th><th>Solicitado</th><th>Processado</th><th>Erro</th><th></th></tr></thead><tbody>
+@foreach(var row in Model){<tr><td>@row.Id</td><td>@(row.OrderId?.ToString() ?? "-")</td><td>@row.Printer</td><td>@row.DocumentType</td><td><span class="badge">@row.Status</span></td><td>@row.Attempts</td><td>@row.RequestedAt.ToLocalTime().ToString("dd/MM/yyyy HH:mm")</td><td>@(row.ProcessedAt?.ToLocalTime().ToString("dd/MM/yyyy HH:mm") ?? "-")</td><td>@(row.LastError ?? "-")</td><td><form asp-action="Reprint" method="post"><input type="hidden" name="id" value="@row.Id"/><button class="button button-secondary" type="submit">Reimprimir</button></form></td></tr>}
+</tbody></table></div></section>

@@ -1,0 +1,23 @@
+<Window x:Class="Naxapa.Pdv.Views.LoginWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="NAXAPA PDV — Login" Height="540" Width="460" WindowStartupLocation="CenterScreen" ResizeMode="NoResize">
+    <Grid Background="#F3F4F6">
+        <Border Background="White" CornerRadius="18" Padding="32" Margin="36" VerticalAlignment="Center">
+            <StackPanel>
+                <TextBlock Text="NAXAPA" FontSize="34" FontWeight="Bold" Foreground="#111827"/>
+                <TextBlock Text="PDV — Sua operação no ponto certo" Margin="0,0,0,24" Foreground="#6B7280"/>
+                <TextBlock Text="Endereço da Gestão/API"/>
+                <TextBox x:Name="ApiUrlBox"/>
+                <TextBlock Text="Usuário ou e-mail"/>
+                <TextBox x:Name="LoginBox"/>
+                <TextBlock Text="Senha"/>
+                <PasswordBox x:Name="PasswordBox"/>
+                <TextBlock Text="ID do estabelecimento (opcional)"/>
+                <TextBox x:Name="EstablishmentBox"/>
+                <TextBlock x:Name="StatusText" Foreground="#DC2626" TextWrapping="Wrap" Margin="0,4"/>
+                <Button x:Name="LoginButton" Content="Entrar" Background="#10B981" Foreground="White" BorderThickness="0" Click="Login_Click"/>
+            </StackPanel>
+        </Border>
+    </Grid>
+</Window>

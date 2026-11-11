@@ -1,0 +1,8 @@
+NAXAPA v3.1 - CORREÇÃO DE COMPILAÇÃO RAZOR
+
+1. Execute NAXAPA_Instalar_Dependencias_v3.exe se ainda não instalou as dependências.
+2. Execute NAXAPA_Abrir_Gestao_API_v3_1_CORRIGIDO.exe.
+3. O launcher atualiza os arquivos locais, limpa bin/obj, executa restore/build e só inicia se a compilação passar.
+4. Acesse http://localhost:5180.
+
+Correção principal: erros CS1963 nas partial views Razor.

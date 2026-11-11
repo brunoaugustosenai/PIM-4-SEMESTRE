@@ -1,0 +1,2 @@
+param([string]$Server='localhost\SQLEXPRESS',[string]$OutputDirectory="$env:USERPROFILE\Documents\NAXAPA\Backups")
+$ErrorActionPreference='Stop';New-Item -ItemType Directory -Force $OutputDirectory|Out-Null;$stamp=Get-Date -Format 'yyyyMMdd_HHmmss';$file=Join-Path $OutputDirectory "NaxapaDB_$stamp.bak";$escaped=$file.Replace("'","''");sqlcmd -S $Server -E -Q "BACKUP DATABASE [NaxapaDB] TO DISK=N'$escaped' WITH COPY_ONLY, CHECKSUM, INIT; RESTORE VERIFYONLY FROM DISK=N'$escaped' WITH CHECKSUM;";Write-Host "Backup validado: $file" -ForegroundColor Green

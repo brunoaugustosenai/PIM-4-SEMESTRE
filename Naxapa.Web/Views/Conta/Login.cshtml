@@ -1,0 +1,9 @@
+@model LoginViewModel
+@{ Layout = null; ViewData["Title"] = "Entrar"; }
+<!doctype html><html lang="pt-BR" data-theme="light"><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/><title>NAXAPA - Entrar</title><link rel="stylesheet" href="~/css/site.css"/></head><body>
+<div class="auth-shell"><div class="auth-card"><div class="auth-brand"><div class="brand-mark">N</div><div><strong>NAXAPA</strong><p>Gestão · acesso seguro</p></div></div>
+<h1>Entrar</h1><p>Use seu usuário ou e-mail cadastrado. Após cinco tentativas inválidas o acesso é bloqueado temporariamente.</p>
+<form method="post"><input asp-for="ReturnUrl" type="hidden"/><div asp-validation-summary="ModelOnly" class="validation-summary"></div>
+<div class="field"><label asp-for="Login"></label><input asp-for="Login" autocomplete="username"/><span asp-validation-for="Login"></span></div>
+<div class="field"><label asp-for="Password"></label><input asp-for="Password" autocomplete="current-password"/><span asp-validation-for="Password"></span></div>
+<label class="check-field"><input asp-for="RememberMe"/> Manter conectado</label><div class="form-actions"><button class="button button-primary" type="submit">Entrar</button></div></form></div></div></body></html>

@@ -1,0 +1,206 @@
+NAXAPA v3 - RELATÓRIO DE TESTES ESTÁTICOS
+====================================================
+Total: 202 | Aprovados: 202 | Falhas: 0
+
+[OK] Arquivo obrigatório: NAXAPA.sln
+[OK] Arquivo obrigatório: Naxapa.Web/Naxapa.Web.csproj
+[OK] Arquivo obrigatório: Naxapa.Pdv/Naxapa.Pdv.csproj
+[OK] Arquivo obrigatório: Naxapa.PrintAgent/Naxapa.PrintAgent.csproj
+[OK] Arquivo obrigatório: Naxapa.Mobile/pubspec.yaml
+[OK] Arquivo obrigatório: Naxapa.Web.Tests/Naxapa.Web.Tests.csproj
+[OK] Arquivo obrigatório: scripts/Build-All.ps1
+[OK] Arquivo obrigatório: scripts/Prepare-Mobile.ps1
+[OK] Arquivo obrigatório: tests/ValidateDatabase.sql
+[OK] Arquivo obrigatório: NaxapaDB_Completo_v3.sql
+[OK] XML válido: Naxapa.Web.Tests/Naxapa.Web.Tests.csproj
+[OK] XML válido: Naxapa.PrintAgent/Naxapa.PrintAgent.csproj
+[OK] XML válido: Naxapa.Pdv/Naxapa.Pdv.csproj
+[OK] XML válido: Naxapa.Web/Naxapa.Web.csproj
+[OK] XML válido: Naxapa.Pdv/App.xaml
+[OK] XML válido: Naxapa.Pdv/Views/MainWindow.xaml
+[OK] XML válido: Naxapa.Pdv/Views/PaymentWindow.xaml
+[OK] XML válido: Naxapa.Pdv/Views/LoginWindow.xaml
+[OK] XML válido: Naxapa.Pdv/Views/OptionSelectionWindow.xaml
+[OK] JSON válido: Naxapa.Web/appsettings.json
+[OK] JSON válido: Naxapa.Web/appsettings.LocalDB.example.json
+[OK] JSON válido: .vscode/launch.json
+[OK] JSON válido: .vscode/extensions.json
+[OK] JSON válido: .vscode/tasks.json
+[OK] JSON válido: .vscode/settings.json
+[OK] JSON válido: Naxapa.Web/Properties/launchSettings.json
+[OK] .NET 10 target: Naxapa.Web.Tests/Naxapa.Web.Tests.csproj
+[OK] Sem target .NET 8: Naxapa.Web.Tests/Naxapa.Web.Tests.csproj
+[OK] .NET 10 target: Naxapa.PrintAgent/Naxapa.PrintAgent.csproj
+[OK] Sem target .NET 8: Naxapa.PrintAgent/Naxapa.PrintAgent.csproj
+[OK] .NET 10 target: Naxapa.Pdv/Naxapa.Pdv.csproj
+[OK] Sem target .NET 8: Naxapa.Pdv/Naxapa.Pdv.csproj
+[OK] .NET 10 target: Naxapa.Web/Naxapa.Web.csproj
+[OK] Sem target .NET 8: Naxapa.Web/Naxapa.Web.csproj
+[OK] ASP.NET OpenAPI 10.0.14
+[OK] EF Core SQL Server 10.0.14
+[OK] EF Core Design 10.0.14
+[OK] Delimitadores balanceados: Naxapa.Web.Tests/SetupLoginIntegrationTests.cs
+[OK] Delimitadores balanceados: Naxapa.Web.Tests/BrazilianDocumentValidatorTests.cs
+[OK] Delimitadores balanceados: Naxapa.Web.Tests/Gtin13ServiceTests.cs
+[OK] Delimitadores balanceados: Naxapa.Web.Tests/NaxapaClockTests.cs
+[OK] Delimitadores balanceados: Naxapa.Web.Tests/SecurityHelpersTests.cs
+[OK] Delimitadores balanceados: Naxapa.PrintAgent/Program.cs
+[OK] Delimitadores balanceados: Naxapa.Pdv/App.xaml.cs
+[OK] Delimitadores balanceados: Naxapa.Web/Program.cs
+[OK] Delimitadores balanceados: Naxapa.Web/Controllers/CaixaController.cs
+[OK] Delimitadores balanceados: Naxapa.Web/Controllers/CardapioController.cs
+[OK] Delimitadores balanceados: Naxapa.Web/Controllers/UsuariosController.cs
+[OK] Delimitadores balanceados: Naxapa.Web/Controllers/PedidosController.cs
+[OK] Delimitadores balanceados: Naxapa.Web/Controllers/SetupController.cs
+[OK] Delimitadores balanceados: Naxapa.Web/Controllers/OpcoesController.cs
+[OK] Delimitadores balanceados: Naxapa.Web/Controllers/ClientesController.cs
+[OK] Delimitadores balanceados: Naxapa.Web/Controllers/ReceitasController.cs
+[OK] Delimitadores balanceados: Naxapa.Web/Controllers/CategoriasController.cs
+[OK] Delimitadores balanceados: Naxapa.Web/Controllers/ContaController.cs
+[OK] Delimitadores balanceados: Naxapa.Web/Controllers/EstabelecimentosController.cs
+[OK] Delimitadores balanceados: Naxapa.Web/Controllers/DiagnosticoController.cs
+[OK] Delimitadores balanceados: Naxapa.Web/Controllers/InsumosController.cs
+[OK] Delimitadores balanceados: Naxapa.Web/Controllers/ProdutosController.cs
+[OK] Delimitadores balanceados: Naxapa.Web/Controllers/ConfiguracoesController.cs
+[OK] Delimitadores balanceados: Naxapa.Web/Controllers/ImpressorasController.cs
+[OK] Delimitadores balanceados: Naxapa.Web/Controllers/CardapioDigitalController.cs
+[OK] Delimitadores balanceados: Naxapa.Web/Controllers/HomeController.cs
+[OK] Delimitadores balanceados: Naxapa.Web/Controllers/SetoresController.cs
+[OK] Delimitadores balanceados: Naxapa.Web/Services/FileStorageService.cs
+[OK] Delimitadores balanceados: Naxapa.Web/Services/BrazilianDocumentValidator.cs
+[OK] Delimitadores balanceados: Naxapa.Web/Services/DatabaseRuntimeState.cs
+[OK] Delimitadores balanceados: Naxapa.Web/Services/NaxapaClock.cs
+[OK] Delimitadores balanceados: Naxapa.Web/Services/OrderWorkflowService.cs
+[OK] Delimitadores balanceados: Naxapa.Web/Services/ProductCsvImportService.cs
+[OK] Delimitadores balanceados: Naxapa.Web/Services/UserAuthenticationService.cs
+[OK] Delimitadores balanceados: Naxapa.Web/Services/Gtin13Service.cs
+[OK] Delimitadores balanceados: Naxapa.Web/Security/NaxapaSecurity.cs
+[OK] Delimitadores balanceados: Naxapa.Web/Entities/NaxapaEntities.cs
+[OK] Delimitadores balanceados: Naxapa.Web/Models/SecurityModels.cs
+[OK] Delimitadores balanceados: Naxapa.Web/Models/AdminModels.cs
+[OK] Delimitadores balanceados: Naxapa.Web/Models/AppModels.cs
+[OK] Delimitadores balanceados: Naxapa.Web/Models/ApiModels.cs
+[OK] Delimitadores balanceados: Naxapa.Web/Data/NaxapaDbContext.cs
+[OK] Delimitadores balanceados: Naxapa.Web/Data/DatabaseInitializer.cs
+[OK] Delimitadores balanceados: Naxapa.Web/Controllers/Api/CatalogApiController.cs
+[OK] Delimitadores balanceados: Naxapa.Web/Controllers/Api/PrintJobsApiController.cs
+[OK] Delimitadores balanceados: Naxapa.Web/Controllers/Api/OperationsApiController.cs
+[OK] Delimitadores balanceados: Naxapa.Web/Controllers/Api/AdminApiController.cs
+[OK] Delimitadores balanceados: Naxapa.Web/Controllers/Api/AuthApiController.cs
+[OK] Delimitadores balanceados: Naxapa.Web/Controllers/Api/ClientsApiController.cs
+[OK] Delimitadores balanceados: Naxapa.Web/Controllers/Api/OrdersApiController.cs
+[OK] Delimitadores balanceados: Naxapa.Web/Controllers/Api/FinanceApiController.cs
+[OK] Delimitadores balanceados: Naxapa.Pdv/Services/NaxapaApiClient.cs
+[OK] Delimitadores balanceados: Naxapa.Pdv/Services/AppSettings.cs
+[OK] Delimitadores balanceados: Naxapa.Pdv/Models/ApiModels.cs
+[OK] Delimitadores balanceados: Naxapa.Pdv/Views/OptionSelectionWindow.xaml.cs
+[OK] Delimitadores balanceados: Naxapa.Pdv/Views/MainWindow.xaml.cs
+[OK] Delimitadores balanceados: Naxapa.Pdv/Views/LoginWindow.xaml.cs
+[OK] Delimitadores balanceados: Naxapa.Pdv/Views/PaymentWindow.xaml.cs
+[OK] Delimitadores balanceados: Naxapa.PrintAgent/Services/PrintRenderer.cs
+[OK] Delimitadores balanceados: Naxapa.PrintAgent/Services/ApiClient.cs
+[OK] Delimitadores balanceados: Naxapa.PrintAgent/Services/PrinterTransport.cs
+[OK] Delimitadores balanceados: Naxapa.PrintAgent/Models/Models.cs
+[OK] Delimitadores balanceados: Naxapa.Mobile/test/cart_service_test.dart
+[OK] Delimitadores balanceados: Naxapa.Mobile/lib/main.dart
+[OK] Delimitadores balanceados: Naxapa.Mobile/lib/screens/shell_screen.dart
+[OK] Delimitadores balanceados: Naxapa.Mobile/lib/screens/settings_screen.dart
+[OK] Delimitadores balanceados: Naxapa.Mobile/lib/screens/login_screen.dart
+[OK] Delimitadores balanceados: Naxapa.Mobile/lib/screens/catalog_screen.dart
+[OK] Delimitadores balanceados: Naxapa.Mobile/lib/screens/product_detail_screen.dart
+[OK] Delimitadores balanceados: Naxapa.Mobile/lib/screens/orders_screen.dart
+[OK] Delimitadores balanceados: Naxapa.Mobile/lib/screens/cart_screen.dart
+[OK] Delimitadores balanceados: Naxapa.Mobile/lib/models/models.dart
+[OK] Delimitadores balanceados: Naxapa.Mobile/lib/services/api_client.dart
+[OK] Delimitadores balanceados: Naxapa.Mobile/lib/services/local_database.dart
+[OK] Delimitadores balanceados: Naxapa.Mobile/lib/services/cart_service.dart
+[OK] Delimitadores balanceados: Naxapa.Mobile/lib/services/session_store.dart
+[OK] Delimitadores balanceados: Naxapa.Web/wwwroot/js/product-form.js
+[OK] Delimitadores balanceados: Naxapa.Web/wwwroot/js/digital-menu.js
+[OK] Delimitadores balanceados: Naxapa.Web/wwwroot/js/site.js
+[OK] Razor @model não está colado ao HTML
+[OK] SQL Server configurado via UseSqlServer direto
+[OK] Sem EnableRetryOnFailure ativo
+[OK] Connection string LocalDB padrão
+[OK] Teste integração Setup/Login presente
+[OK] Script criar acesso e testar presente
+[OK] Script validação completa presente
+[OK] Autorização global MVC
+[OK] Cookie authentication
+[OK] Bearer API customizado
+[OK] Rate limiting API
+[OK] Senha com PasswordHasher
+[OK] OpenAPI mapeado
+[OK] Sem DemoStore
+[OK] API cobre /api/v1
+[OK] API cobre products
+[OK] API cobre clients
+[OK] API cobre orders
+[OK] API cobre payment-methods
+[OK] API cobre cash
+[OK] API cobre tables
+[OK] API cobre tabs
+[OK] API cobre print-jobs
+[OK] API cobre auth/token
+[OK] API usa permissões
+[OK] SQL contém CREATE DATABASE NaxapaDB
+[OK] SQL contém CREATE TABLE cad.Estabelecimento
+[OK] SQL contém CREATE TABLE seg.Usuario
+[OK] SQL contém CREATE TABLE cad.Produto
+[OK] SQL contém CREATE TABLE op.Pedido
+[OK] SQL contém CREATE TABLE fin.Caixa
+[OK] SQL contém CREATE TABLE fin.CaixaSessao
+[OK] SQL contém CREATE TABLE fin.MovimentoCaixa
+[OK] SQL contém CREATE TABLE imp.TrabalhoImpressao
+[OK] SQL contém cad.sp_Produto_Listar
+[OK] SQL contém op.sp_Pedido_Criar
+[OK] SQL contém op.sp_Pedido_AdicionarItem
+[OK] SQL contém op.sp_Pedido_AdicionarOpcao
+[OK] SQL contém op.sp_Pedido_AlterarStatus
+[OK] SQL contém fin.sp_Pagamento_Registrar
+[OK] SQL contém fin.sp_Caixa_Abrir
+[OK] SQL contém fin.sp_Caixa_Fechar
+[OK] SQL contém imp.sp_TrabalhoImpressao_Enfileirar
+[OK] Patch v3 contém cfg.SchemaVersion
+[OK] Patch v3 contém cad.Insumo
+[OK] Patch v3 contém cad.Receita
+[OK] Patch v3 contém CAIXA.CADASTRAR
+[OK] Patch v3 contém INSUMO.VISUALIZAR
+[OK] Patch v3 contém RECEITA.VISUALIZAR
+[OK] Fila produção automática
+[OK] Comprovante automático
+[OK] Impressão idempotente
+[OK] Renderer produção
+[OK] Renderer comprovante não fiscal
+[OK] PDV opções modeladas
+[OK] PDV consulta detalhe produto
+[OK] PDV envia opções
+[OK] PDV pedidos reais
+[OK] PDV pagamentos reais
+[OK] PDV caixa real
+[OK] PDV mesas/comandas
+[OK] Mobile autenticação API
+[OK] Mobile produtos API
+[OK] Mobile pedidos API
+[OK] Mobile SQLite
+[OK] Mobile adicionais
+[OK] Mobile cache não é banco oficial
+[OK] Preparação Android local HTTP
+[OK] Build script valida .NET 10
+[OK] Build script roda testes .NET
+[OK] Build script roda Flutter analyze/test
+[OK] Build script publica PDV self-contained
+[OK] Build script publica PrintAgent self-contained
+[OK] Validação SQL disponível
+[OK] Backup SQL disponível
+[OK] GTIN-13 service presente
+[OK] Gerador GTIN-13 exposto no produto
+[OK] GTIN-13 valida dígito verificador
+[OK] Upload drag and drop produto
+[OK] Upload continua usando storage seguro
+[OK] Setup exige CPF/CNPJ
+[OK] Setup grava documento no estabelecimento
+[OK] Cardápio digital público presente
+[OK] Cardápio digital lê produtos reais
+[OK] Cardápio digital mostra imagem e preço
+[OK] Nenhuma tabela nova exigida por v3.4

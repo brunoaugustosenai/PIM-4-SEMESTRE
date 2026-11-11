@@ -1,0 +1,64 @@
+@model ProductFormViewModel
+<div asp-validation-summary="ModelOnly" class="validation-summary"></div>
+<div class="form-grid">
+    <div class="field">
+        <label asp-for="Nome"></label>
+        <input asp-for="Nome" />
+        <span asp-validation-for="Nome"></span>
+    </div>
+    <div class="field">
+        <label asp-for="CodigoInterno"></label>
+        <input asp-for="CodigoInterno" />
+    </div>
+    <div class="field">
+        <label asp-for="CodigoBarras"></label>
+        <div class="input-action-row">
+            <input asp-for="CodigoBarras" inputmode="numeric" autocomplete="off" />
+            <button type="button" class="button button-secondary" id="generateGtinButton" data-url="@Url.Action("GerarGtin13", "Produtos")">Gerar GTIN-13</button>
+        </div>
+        <span class="field-help">O gerador cria um GTIN-13 interno com dígito verificador válido. Para uso comercial oficial, utilize numeração atribuída pela GS1.</span>
+        <span asp-validation-for="CodigoBarras"></span>
+    </div>
+    <div class="field">
+        <label asp-for="CategoriaId"></label>
+        <select asp-for="CategoriaId" asp-items="Model.Categorias"><option value="">Selecione</option></select>
+        <span asp-validation-for="CategoriaId"></span>
+    </div>
+    <div class="field">
+        <label asp-for="SetorProducaoId"></label>
+        <select asp-for="SetorProducaoId" asp-items="Model.Setores"><option value="">Sem setor</option></select>
+    </div>
+    <div class="field">
+        <label asp-for="PrecoVenda"></label>
+        <input asp-for="PrecoVenda" type="number" step="0.01" />
+    </div>
+    <div class="field">
+        <label asp-for="Custo"></label>
+        <input asp-for="Custo" type="number" step="0.01" />
+    </div>
+    <div class="field">
+        <label asp-for="UnidadeMedida"></label>
+        <input asp-for="UnidadeMedida" />
+    </div>
+    <div class="field field-full">
+        <label asp-for="Descricao"></label>
+        <textarea asp-for="Descricao" rows="4"></textarea>
+    </div>
+    <div class="field field-full">
+        <label asp-for="Imagem"></label>
+        <div class="image-dropzone" id="productImageDropzone" tabindex="0" role="button" aria-label="Selecionar imagem do produto">
+            <input asp-for="Imagem" id="productImageInput" class="image-file-input" type="file" accept="image/png,image/jpeg,image/webp" />
+            <div class="image-dropzone-copy">
+                <strong>Arraste a imagem aqui</strong>
+                <span>ou clique para selecionar · JPG, PNG ou WEBP · máximo 5 MB</span>
+            </div>
+            <img id="productImagePreview" class="image-preview @(string.IsNullOrWhiteSpace(Model.ImagemAtual) ? "is-hidden" : "")" src="@(Model.ImagemAtual ?? string.Empty)" alt="Prévia da imagem do produto" />
+        </div>
+        <span asp-validation-for="Imagem"></span>
+    </div>
+</div>
+<div class="check-grid">
+    <label class="check-field"><input asp-for="DisponivelCardapio" /> Disponível no cardápio</label>
+    <label class="check-field"><input asp-for="ControlaEstoque" /> Controla estoque</label>
+    <label class="check-field"><input asp-for="Ativo" /> Ativo</label>
+</div>

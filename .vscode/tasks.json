@@ -1,0 +1,73 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "NAXAPA: Restore .NET",
+      "type": "shell",
+      "command": "dotnet restore NAXAPA.sln",
+      "group": "build",
+      "problemMatcher": "$msCompile"
+    },
+    {
+      "label": "NAXAPA: Build Web/API",
+      "type": "shell",
+      "command": "dotnet build Naxapa.Web/Naxapa.Web.csproj -c Debug",
+      "dependsOn": "NAXAPA: Restore .NET",
+      "group": "build",
+      "problemMatcher": "$msCompile"
+    },
+    {
+      "label": "NAXAPA: Run Web/API",
+      "type": "shell",
+      "command": "dotnet run --project Naxapa.Web/Naxapa.Web.csproj --urls http://0.0.0.0:5180",
+      "dependsOn": "NAXAPA: Build Web/API",
+      "isBackground": false,
+      "problemMatcher": "$msCompile"
+    },
+    {
+      "label": "NAXAPA: Test Web",
+      "type": "shell",
+      "command": "dotnet test Naxapa.Web.Tests/Naxapa.Web.Tests.csproj -c Debug",
+      "dependsOn": "NAXAPA: Restore .NET",
+      "group": "test",
+      "problemMatcher": "$msCompile"
+    },
+    {
+      "label": "NAXAPA: Run PDV",
+      "type": "shell",
+      "command": "dotnet run --project Naxapa.Pdv/Naxapa.Pdv.csproj",
+      "dependsOn": "NAXAPA: Restore .NET",
+      "problemMatcher": "$msCompile"
+    },
+    {
+      "label": "NAXAPA: Run Print Agent",
+      "type": "shell",
+      "command": "dotnet run --project Naxapa.PrintAgent/Naxapa.PrintAgent.csproj",
+      "dependsOn": "NAXAPA: Restore .NET",
+      "problemMatcher": "$msCompile"
+    },
+    {
+      "label": "NAXAPA Mobile: pub get",
+      "type": "shell",
+      "command": "flutter pub get",
+      "options": { "cwd": "${workspaceFolder}/Naxapa.Mobile" },
+      "problemMatcher": []
+    },
+    {
+      "label": "NAXAPA Mobile: analyze",
+      "type": "shell",
+      "command": "flutter analyze",
+      "options": { "cwd": "${workspaceFolder}/Naxapa.Mobile" },
+      "dependsOn": "NAXAPA Mobile: pub get",
+      "problemMatcher": []
+    },
+    {
+      "label": "NAXAPA Mobile: run",
+      "type": "shell",
+      "command": "flutter run",
+      "options": { "cwd": "${workspaceFolder}/Naxapa.Mobile" },
+      "dependsOn": "NAXAPA Mobile: pub get",
+      "problemMatcher": []
+    }
+  ]
+}

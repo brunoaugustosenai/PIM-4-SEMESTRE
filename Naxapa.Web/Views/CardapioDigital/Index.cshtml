@@ -1,0 +1,86 @@
+@model DigitalMenuViewModel
+@{
+    Layout = null;
+    var total = Model.Categorias.Sum(x => x.Produtos.Count);
+}
+<!doctype html>
+<html lang="pt-BR" data-theme="light">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#15171c" />
+    <title>Cardápio digital - @Model.Estabelecimento</title>
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+</head>
+<body class="digital-menu-body">
+    <header class="digital-menu-hero">
+        <div class="digital-menu-brand">
+            @if (!string.IsNullOrWhiteSpace(Model.LogoUrl))
+            {
+                <img src="@Model.LogoUrl" alt="Logo @Model.Estabelecimento" />
+            }
+            else
+            {
+                <div class="brand-mark">N</div>
+            }
+            <div>
+                <span class="eyebrow">NAXAPA · CARDÁPIO DIGITAL</span>
+                <h1>@Model.Estabelecimento</h1>
+                <p>@total produto(s) disponível(is) no cardápio.</p>
+            </div>
+        </div>
+        <div class="digital-menu-search">
+            <input id="digitalMenuSearch" type="search" placeholder="Buscar produto..." autocomplete="off" />
+        </div>
+    </header>
+
+    <main class="digital-menu-content" id="digitalMenuContent">
+        @if (total == 0)
+        {
+            <section class="digital-menu-empty">
+                <strong>Nenhum produto disponível no momento.</strong>
+                <span>Marque produtos ativos como “Disponível no cardápio” no cadastro.</span>
+            </section>
+        }
+        else
+        {
+            @foreach (var category in Model.Categorias)
+            {
+                <section class="digital-menu-category" data-menu-category>
+                    <div class="digital-menu-category-heading">
+                        <h2>@category.Nome</h2>
+                        <span>@category.Produtos.Count produto(s)</span>
+                    </div>
+                    <div class="digital-menu-grid">
+                        @foreach (var product in category.Produtos)
+                        {
+                            <article class="digital-product-card" data-menu-product data-search="@(product.Nome + " " + product.Descricao)">
+                                <div class="digital-product-image">
+                                    @if (!string.IsNullOrWhiteSpace(product.ImagemUrl))
+                                    {
+                                        <img src="@product.ImagemUrl" loading="lazy" alt="@product.Nome" />
+                                    }
+                                    else
+                                    {
+                                        <span>Sem imagem</span>
+                                    }
+                                </div>
+                                <div class="digital-product-copy">
+                                    <h3>@product.Nome</h3>
+                                    @if (!string.IsNullOrWhiteSpace(product.Descricao))
+                                    {
+                                        <p>@product.Descricao</p>
+                                    }
+                                    <strong>@product.Preco.ToString("C", System.Globalization.CultureInfo.GetCultureInfo("pt-BR"))</strong>
+                                </div>
+                            </article>
+                        }
+                    </div>
+                </section>
+            }
+        }
+    </main>
+    <footer class="digital-menu-footer">NAXAPA · Sua operação no ponto certo.</footer>
+    <script src="~/js/digital-menu.js" asp-append-version="true"></script>
+</body>
+</html>
